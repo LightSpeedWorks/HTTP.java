@@ -1,19 +1,19 @@
-HttpClient.java
+HTTP.java
 ==========================
 
 LightSpeedWorks pages {光速工房}
 
-Light HTTP Client Library for Java
-{軽量HTTPクライアントライブラリ(Java向け)}
+Light HTTP Access Library for Java
+{軽量HTTPアクセスライブラリ(Java向け)}
 
-[LightSpeedWorks/HttpClient.java#readme] (https://github.com/LightSpeedWorks/HttpClient.java#readme "LightSpeedWorks/HttpClient.java#readme")
+[LightSpeedWorks/HTTP.java#readme] (https://github.com/LightSpeedWorks/HTTP.java#readme "LightSpeedWorks/HTTP.java#readme")
 
 ## usage: {使用方法:}
 
-## HttpClient
+## HTTP
 
 ``` java
-import com.lightspeedworks.http.HttpClient;
+import com.lightspeedworks.http.HTTPClient;
 
-HttpClient client = new HttpClient();
+HTTPClient client = new HTTPClient();
 ```

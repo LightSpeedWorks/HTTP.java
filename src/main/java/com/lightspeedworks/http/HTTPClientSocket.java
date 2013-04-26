@@ -27,6 +27,11 @@ public class HTTPClientSocket implements HTTPClient {
 	static final int DEFAULT_HTTP_PORT = 80;
 
 	/**
+	 * hexa-decimal.
+	 */
+	static final int HEXA_DECIMAL = 16;
+
+	/**
 	 * from 2 bytes.
 	 */
 	static final int U_0080 = 0x0080;
@@ -221,7 +226,7 @@ public class HTTPClientSocket implements HTTPClient {
 					if (line == null)
 						throw new Exception("unexpected EOF in chunked body 1");
 					// System.out.println("@@@ chunk len: " + line);
-					int len = Integer.parseInt(line, 16); // hexa-decimal
+					int len = Integer.parseInt(line, HEXA_DECIMAL);
 					if (len == 0) {
 						line = br.readLine();
 						if (line == null)
@@ -247,12 +252,11 @@ public class HTTPClientSocket implements HTTPClient {
 			}
 
 			throw new Exception("Content-Length or Transfer-Encoding chunked expected");
-		}
-		// catch (MalformedURLException e)
-		// catch (UnknownHostException e)
-		// catch (UnsupportedEncodingException e)
-		// catch (IOException e)
-		catch (Exception e) {
+		} catch (Exception e) {
+			// catch (MalformedURLException e)
+			// catch (UnknownHostException e)
+			// catch (UnsupportedEncodingException e)
+			// catch (IOException e)
 			throw e;
 		} finally {
 			if (br != null) {

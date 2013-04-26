@@ -1,27 +1,26 @@
 package com.lightspeedworks.http;
 
-import com.lightspeedworks.http.HTTPClient;
-
 // http://k-hiura.cocolog-nifty.com/blog/2012/04/javahttphttps-1.html
 
 // http://x68000.q-e-d.net/~68user/net/java-http-url-connection-1.html
+// http://x68000.q-e-d.net/~68user/net/java-http-url-connection-2.html
 // http://x68000.q-e-d.net/~68user/net/java-http-socket-1.html
-
 
 public class HTTPClientWorkMain {
 
 	/**
 	 * main {メイン}
+	 *
 	 * @param args
 	 * @throws Exception
 	 */
 	public static void main(String[] args) throws Exception {
-		final String LINE_SEPARATOR = HTTPClient.LINE_SEPARATOR;
+		final String LINE_SEPARATOR = HTTP.LINE_SEPARATOR;
 		String resText;
 		String url = "http://localhost:1337/";
-		//String url = "http://localhost/";
+		// String url = "http://localhost/";
 
-		HTTPClient client = new HTTPClient();
+		HTTPClient client = HTTP.createClient();
 
 		resText = client.headRequest(url);
 		System.out.println("### main headRequest resText: " + resText);

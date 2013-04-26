@@ -1,12 +1,12 @@
 HTTP.java
 ==========================
 
-LightSpeedWorks pages {光速工房}
+LightSpeedWorks {光速工房}
 
-Light HTTP Access Library for Java
+Light HTTP Access Library for Java <br/>
 {軽量HTTPアクセスライブラリ(Java向け)}
 
-[LightSpeedWorks/HTTP.java#readme] (https://github.com/LightSpeedWorks/HTTP.java#readme "LightSpeedWorks/HTTP.java#readme")
+[LightSpeedWorks/HTTP.java#readme] (https://github.com/LightSpeedWorks/HTTP.java#readme)
 
 ## usage: {使用方法:}
 

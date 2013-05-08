@@ -127,8 +127,8 @@ public class HTTPServerSocket extends Thread {
 	 *            int
 	 */
 	public HTTPServerSocket(Socket aClientSocket, int aConnectionNo) {
-		this.clientSocket = aClientSocket;
-		this.connectionNo = aConnectionNo;
+		clientSocket = aClientSocket;
+		connectionNo = aConnectionNo;
 	}
 
 	// 接続処理スレッド

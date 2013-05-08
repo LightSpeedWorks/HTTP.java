@@ -151,7 +151,8 @@ public class HTTPClientSocket implements HTTPClient {
 	 *             Network I/O or more Exception
 	 */
 	public String doRequest(String method, String url, String data, String dataType) throws Exception {
-		System.out.print(HTTP.LINE_SEPARATOR + "########################################");
+		// System.out.print(HTTP.LINE_SEPARATOR +
+		// "########################################");
 
 		Socket socket = null;
 
@@ -195,11 +196,11 @@ public class HTTPClientSocket implements HTTPClient {
 			line = br.readLine();
 			if (line == null)
 				throw new Exception("unexpected EOF in status");
-			System.out.println(method + " code...: " + line);
+			// System.out.println(method + " code...: " + line);
 
 			HashMap<String, String> map = new HashMap<String, String>();
 
-			// header
+			// header {ヘッダ}
 			while (true) {
 				line = br.readLine();
 				if (line == null)

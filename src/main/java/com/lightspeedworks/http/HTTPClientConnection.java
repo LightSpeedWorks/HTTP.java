@@ -119,7 +119,8 @@ public class HTTPClientConnection implements HTTPClient {
 	 *             Network I/O or more Exception
 	 */
 	public String doRequest(String method, String url, String data, String dataType) throws Exception {
-		System.out.print(HTTP.LINE_SEPARATOR + "########################################");
+		// System.out.print(HTTP.LINE_SEPARATOR +
+		// "########################################");
 
 		HttpURLConnection conn = (HttpURLConnection) new URL(url).openConnection();
 		conn.setInstanceFollowRedirects(false);

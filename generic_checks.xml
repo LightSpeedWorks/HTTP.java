@@ -7,7 +7,7 @@
 <!--
     Checkstyle-Configuration: Generic Checks
     Description: 
-Generic Checks コーディング規約チェックの Checkstyle 構成です。
+Generic Checks
 -->
 <module name="Checker">
   <property name="severity" value="warning"/>
@@ -66,11 +66,16 @@ Generic Checks コーディング規約チェックの Checkstyle 構成です�
     <module name="DoubleCheckedLocking"/>
     <module name="EmptyStatement"/>
     <module name="EqualsHashCode"/>
-    <module name="HiddenField"/>
+    <module name="HiddenField">
+      <property name="severity" value="ignore"/>
+      <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+    </module>
     <module name="IllegalInstantiation"/>
     <module name="InnerAssignment"/>
     <module name="MagicNumber">
+      <property name="severity" value="ignore"/>
       <property name="ignoreNumbers" value="-1, 0, 1, 2, 3"/>
+      <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
     </module>
     <module name="MissingSwitchDefault"/>
     <module name="RedundantThrows">
